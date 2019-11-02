@@ -6,22 +6,77 @@
 .center-col-section
     margin: auto 0
     text-align: center
-    @include txt-shadow( 2px, 2px, 10px, #000)
     
 .main-section
     h1
-        font-size:3em
+        font-size:4em
+        margin-top: -30px
+        //@include txt-shadow( 2px, 2px, 10px, #000)
     h2
         font-family: $font-fancy
     h3
-        font-size: 4em
+        font-size: 3em
     background: url('../../images/wallapaper-dev-setup.jpg') no-repeat center center fixed
-    
 
-
-    
 .section-feature
     background: url('../../images/wallapaper-dev-setup-2.jpg') no-repeat center center fixed
 
 .section-feature2
     background: url('../../images/wallapaper-dev-setup-1.jpg') no-repeat center center fixed
+
+.circle-profile
+    width: 250px
+    height: 250px
+    border: 1px solid #ccc
+    margin: 0 auto
+    padding: 10px
+    background: #fff
+    @include circle-box(50%)
+
+.circle-profile-pic
+    width: 230px
+    height: 230px
+    background: url('../../images/david-pic-profile.jpeg')
+    background-size: 230px auto
+    @include circle-box(50%)
+
+.circle-nav
+    display: inline-block
+    position: fixed
+    bottom: 30px
+    ul
+        li
+            list-style: none
+            margin: 5px 0
+            width: 10px
+            height: 10px
+            border: 1px solid #fff
+            @include circle-box(50%)
+        .actived
+            background: #fff
+
+.circle-button
+    width: 50px
+    height: 50px
+    border: 1px solid #fff
+    margin: 0 auto
+    @include circle-box(50%)
+
+
+@media (max-width: 767.98px) 
+    .main-section
+        h1
+            font-size: 2em
+        h3
+            font-size: 1.5em
+
+    .circle-profile
+        width: 200px
+        height: 200px
+
+    .circle-profile-pic
+        width: 180px
+        height: 180px
+    
+    .circle-nav
+        bottom: 10px

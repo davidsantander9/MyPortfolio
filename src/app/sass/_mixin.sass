@@ -8,8 +8,7 @@
     -webkit-text-shadow: $x $y $blur $color
     -ms-text-shadow: $x $y $blur $color
     
-
-
-@mixin bg()
-    background: #000 
-
+@mixin circle-box($property)
+    border-radius: $property
+    -webkit-border-radius: $property
+    -ms-border-radius: $property
